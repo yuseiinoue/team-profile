@@ -1,3 +1,8 @@
+body {
+  margin: 40px;   /* 外側の余白：ページ端からのスペース */
+  padding: 20px;  /* 内側の余白：背景や内容との間のスペース */
+}
+
 h1 {
   color: #010079;
   text-shadow: 0 0 5px white;
@@ -12,7 +17,7 @@ h2 {
   border-top: solid 2px black;
   border-bottom: solid 2px black;
 }
-h2:before, h1:after {
+h2:before, h2:after {
   content: '';
   position: absolute;
   top: -7px;
