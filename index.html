@@ -9,13 +9,13 @@
 
   <body>
     <!-- page title -->
-     <div>
+    <div>
       <h1>Our Team</h1>
       <p>私たちのチームメンバーを、自己紹介とともにご紹介します。</p>
-     </div>
+    </div>
     <!-- kawai -->
-     <h2>河合蒼太</h2>
-     <div class="profile/kawai">
+    <h2>河合蒼太</h2>
+    <div class="profile/kawai">
         <p>学科：情報システム学科</p>
         <p>好きな食べ物：フルーツ,レタス</p>
         <p>嫌いな食べ物：梅</p>
@@ -25,8 +25,8 @@
         <p>楽しみなこと：東京一人暮らし</p>
         <p>一言：一人暮らしの場所探しヘルプ</p>
 
-     </div>
-     <img src="img/tokyo.png" alt="tokyo" height="300px">
+    </div>
+    <img src="img/tokyo.png" alt="tokyo" height="300px">
     <!-- inoue -->
     <div>
       <h2>井上 侑政</h2>
@@ -56,24 +56,59 @@
       </ul>
     </div>
     <!-- sakurai -->
-    <div>
+    <div class="profile/sakurai">
       <h2>櫻井 綾佳</h2>
       <p>最近の趣味：家庭菜園</p>
       <style>
+        .image-container {
+          display: flex;
+          gap: 5px;
+        }
+
+        .image-container figure {
+          text-align: center;
+          margin: 0;
+        }
+
         .image-container img {
-          display: inline-block;
-          width: 300px;  /* 必要に応じて調整 */
-          margin-right: 10px;
+          height: 200px;
+          display: block;
+          margin-bottom: 5px;
+        }
+
+        .image-container figcaption {
+          font-size: 0.9em;
+          color: #555;
         }
       </style>
 
       <div class="image-container">
-        <img src="img/Sakurai_家庭菜園.jpg" alt="3/9時点の畑" height="300px">
-        <img src="img/Sakurai_畑とネッコ.jpg" alt="5/19" height="300">
-
+        <figure>
+          <img src="img/Sakurai_家庭菜園.jpg" alt="3/9時点の畑の画像">
+          <figcaption>3月9日：トラクターで荒れ野を耕す</figcaption>
+        </figure>
+        <figure>
+          <img src="img/Sakurai_畑とネッコ.jpg" alt="5/19時点の畑に侵入するうちの猫の画像">
+          <figcaption>5月19日：畑に侵入するうちの猫</figcaption>
+        </figure>
       </div>
-    </div>
 
+      <div>
+        <p>ここ数年の趣味：TRPG（テーブルトークRPG）</p>
+        <p>プレイヤー同士で役を演じながら物語を進める対話型ゲーム。</p>
+        <p>中でも「クトゥルフ神話TRPG」をメインに遊んでいる。</p>
+        <p font-size: 0.8em;>（クトゥルフ神話という架空の神話に出てくるキモいクリーチャーと対峙しながら謎解きする遊び）</p>
+      </div>
+            <div class="image-container">
+        <figure>
+          <img src="img/クトゥルフ.png" alt="いらすとやのクトゥルフ">
+          <figcaption>いらすとやのクトゥルフ</figcaption>
+        </figure>
+        <figure>
+          <img src="img/cthulhu.png" alt="リアルめのクトゥルフ">
+          <figcaption>リアルめのクトゥルフ</figcaption>
+        </figure>
+    </div>
     <!-- yoshimitu -->
   </body>
 </html>
